@@ -67,15 +67,30 @@ class AboutScreen extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 ),
-                ListTile(
-                  leading: CircleAvatar(
-                    backgroundColor: Colors.blue,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ChatScreen()));
+                  },
+                  child: ListTile(
+                    leading: Hero(
+                      tag: "hero-tag",
+                      child: CircleAvatar(
+                        child: Icon(Icons.person),
+                      ),
+                    ),
                   ),
-                  title: Text("Hello"),
-                  subtitle: Text("xyz........."),
-                  trailing: CircleAvatar(
-                    backgroundColor: Colors.green,
-                  ),
+                ),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    CircularProgressIndicator(
+                      value: 0.5,
+                      backgroundColor: Colors.red,
+                      color: Colors.blue,
+                    ),
+                    Text("50%")
+                  ],
                 ),
                 RoundCornerContainerCustom(roundContainerText: "Shahzeb"),
                 RoundCornerContainerCustomFun("Owais"),

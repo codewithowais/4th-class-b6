@@ -28,14 +28,14 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     print("THis is Calling by Abdullah");
-    Future.delayed(
-      Duration(seconds: 5),
-      () {
-        print("Hi  Abdullah");
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => AboutScreen()));
-      },
-    );
+    // Future.delayed(
+    //   Duration(seconds: 5),
+    //   () {
+    //     print("Hi  Abdullah");
+    //     Navigator.pushReplacement(
+    //         context, MaterialPageRoute(builder: (context) => AboutScreen()));
+    //   },
+    // );
     super.initState();
   }
 
@@ -45,6 +45,8 @@ class _ChatScreenState extends State<ChatScreen> {
     print("THis is Calling by shahzeb");
     super.dispose();
   }
+
+  bool expanded = true;
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +63,52 @@ class _ChatScreenState extends State<ChatScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            Hero(
+              tag: "hero-tag",
+              child: CircleAvatar(
+                radius: 79,
+                child: Icon(
+                  Icons.person,
+                  size: 79,
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                setState(() {
+                  expanded = !expanded;
+                });
+              },
+              child: AnimatedContainer(
+                duration: Duration(seconds: 1),
+                curve: Curves.bounceIn,
+                height: expanded ? 100 : 200,
+                width: expanded ? 100 : 200,
+                decoration: BoxDecoration(
+                    color: expanded ? Colors.blue : Colors.red,
+                    borderRadius: expanded
+                        ? BorderRadius.all(Radius.circular(0))
+                        : BorderRadius.all(Radius.circular(100))),
+                child: FlutterLogo(),
+              ),
+            ),
+
+            // GestureDetector(
+            //   onTap: () {
+            //     setState(() {
+            //       expanded = !expanded;
+            //     });
+            //   },
+            //   child: AnimatedContainer(
+            //     decoration: BoxDecoration(
+            //       color: expanded ? Colors.blue : Colors.black,
+            //     ),
+            //     width: expanded ? 200 : 300,
+            //     height: expanded ? 200 : 300,
+            //     duration: Duration(seconds: 1),
+            //     curve: Curves.fastOutSlowIn,
+            //   ),
+            // ),
             TextField(
               minLines: 3,
               maxLines: 5,
