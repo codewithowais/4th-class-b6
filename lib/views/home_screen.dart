@@ -17,9 +17,13 @@ class _HomeScreenState extends State<HomeScreen> {
   List bottomNavScreens = [
     Column(
       children: [
-        const Text(
-          "Home Screen",
-          style: TextStyle(fontSize: 40),
+        Column(
+          children: [
+            const Text(
+              "Home Screen",
+              style: TextStyle(fontSize: 40),
+            ),
+          ],
         ),
         // Stack(
         //   clipBehavior: Clip.none,

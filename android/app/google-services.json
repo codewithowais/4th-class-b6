@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28638115933",
+    "project_id": "quickmedicalapp",
+    "storage_bucket": "quickmedicalapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28638115933:android:c0ccf686b7eb1271a035b4",
+        "android_client_info": {
+          "package_name": "com.example.practice_image"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClro-0OhKasU1qfAZaj5c3dSs7ciXX0YQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

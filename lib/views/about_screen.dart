@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:practice_image/components/custom_listtile_button.dart';
 import 'package:practice_image/views/chat_screen.dart';
+import 'package:practice_image/views/signin_screen.dart';
+import 'package:practice_image/views/signup_screen.dart';
 
 import '../components/round_corner_container.dart';
 
@@ -67,6 +69,22 @@ class AboutScreen extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
                 ),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignupScreen()));
+                    },
+                    child: Text("Signup")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignInScreen()));
+                    },
+                    child: Text("Signin")),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,
