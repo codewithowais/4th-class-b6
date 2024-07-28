@@ -21,7 +21,10 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for android - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
@@ -41,48 +44,41 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC7LnYXbO4fIP6g9k3IKnDwZXH01UZPelw',
-    appId: '1:28638115933:web:363c8c3cf6911bf7a035b4',
-    messagingSenderId: '28638115933',
-    projectId: 'quickmedicalapp',
-    authDomain: 'quickmedicalapp.firebaseapp.com',
-    storageBucket: 'quickmedicalapp.appspot.com',
-    measurementId: 'G-XJJLS02968',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyClro-0OhKasU1qfAZaj5c3dSs7ciXX0YQ',
-    appId: '1:28638115933:android:c0ccf686b7eb1271a035b4',
-    messagingSenderId: '28638115933',
-    projectId: 'quickmedicalapp',
-    storageBucket: 'quickmedicalapp.appspot.com',
+    apiKey: 'AIzaSyDLwPw2NrfwcPQWgsiOEfNOQYzGoO8NnoQ',
+    appId: '1:1087977239434:web:ddf8ebb4c73531b744ce73',
+    messagingSenderId: '1087977239434',
+    projectId: 'eccommerce-7918a',
+    authDomain: 'eccommerce-7918a.firebaseapp.com',
+    storageBucket: 'eccommerce-7918a.appspot.com',
+    measurementId: 'G-QSLC1LX4R2',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAnHaXcrhelJOzIi0hjfrJQlpHp4QWJ7Rw',
-    appId: '1:28638115933:ios:1775c8347c037bd7a035b4',
-    messagingSenderId: '28638115933',
-    projectId: 'quickmedicalapp',
-    storageBucket: 'quickmedicalapp.appspot.com',
+    apiKey: 'AIzaSyCQAri9iZD9A3VMsurR3giRIyvXuoYABI0',
+    appId: '1:1087977239434:ios:1cd3c5a3e5903a6f44ce73',
+    messagingSenderId: '1087977239434',
+    projectId: 'eccommerce-7918a',
+    storageBucket: 'eccommerce-7918a.appspot.com',
     iosBundleId: 'com.example.practiceImage',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAnHaXcrhelJOzIi0hjfrJQlpHp4QWJ7Rw',
-    appId: '1:28638115933:ios:1775c8347c037bd7a035b4',
-    messagingSenderId: '28638115933',
-    projectId: 'quickmedicalapp',
-    storageBucket: 'quickmedicalapp.appspot.com',
+    apiKey: 'AIzaSyCQAri9iZD9A3VMsurR3giRIyvXuoYABI0',
+    appId: '1:1087977239434:ios:1cd3c5a3e5903a6f44ce73',
+    messagingSenderId: '1087977239434',
+    projectId: 'eccommerce-7918a',
+    storageBucket: 'eccommerce-7918a.appspot.com',
     iosBundleId: 'com.example.practiceImage',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyC7LnYXbO4fIP6g9k3IKnDwZXH01UZPelw',
-    appId: '1:28638115933:web:aca842babcfc12efa035b4',
-    messagingSenderId: '28638115933',
-    projectId: 'quickmedicalapp',
-    authDomain: 'quickmedicalapp.firebaseapp.com',
-    storageBucket: 'quickmedicalapp.appspot.com',
-    measurementId: 'G-LGXVT48LVL',
+    apiKey: 'AIzaSyDLwPw2NrfwcPQWgsiOEfNOQYzGoO8NnoQ',
+    appId: '1:1087977239434:web:d2d27cd59bc2b26d44ce73',
+    messagingSenderId: '1087977239434',
+    projectId: 'eccommerce-7918a',
+    authDomain: 'eccommerce-7918a.firebaseapp.com',
+    storageBucket: 'eccommerce-7918a.appspot.com',
+    measurementId: 'G-PM7JK886X2',
   );
+
 }

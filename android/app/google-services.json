@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "28638115933",
-    "project_id": "quickmedicalapp",
-    "storage_bucket": "quickmedicalapp.appspot.com"
+    "project_number": "1087977239434",
+    "project_id": "eccommerce-7918a",
+    "storage_bucket": "eccommerce-7918a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:28638115933:android:c0ccf686b7eb1271a035b4",
+        "mobilesdk_app_id": "1:1087977239434:android:cc27f8eb15addfdb44ce73",
         "android_client_info": {
-          "package_name": "com.example.practice_image"
+          "package_name": "com.exampl"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyClro-0OhKasU1qfAZaj5c3dSs7ciXX0YQ"
+          "current_key": "AIzaSyADgIKUnUFUsJAbDrljwSq_KGfKZP3Sc9E"
         }
       ],
       "services": {

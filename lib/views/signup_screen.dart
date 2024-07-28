@@ -13,7 +13,7 @@ class SignupScreen extends StatelessWidget {
         email: emailControl.text,
         password: passwordControl.text,
       );
-      print(credential);
+      print(credential.runtimeType);
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         print('The password provided is too weak.');
